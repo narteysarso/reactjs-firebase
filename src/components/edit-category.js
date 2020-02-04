@@ -1,9 +1,9 @@
 import React from "react";
 
-class AddCategory extends React.Component{
+class EditCategory extends React.Component{
     state = {
         name: "",
-        description: ""
+        description: "",
     }
 
     handleSubmit = (event) => {
@@ -20,12 +20,11 @@ class AddCategory extends React.Component{
 
     render(){
         return (
-
-            <div className="modal fade" id="add-category-modal" tabindex="1" role="dialog">
+            <div className="modal fade" id="edit-category-modal" tabindex="1" role="dialog">
                 <div className="modal-dialog" role="document">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <h4 className="modal-title">Add category</h4>
+                            <h4 className="modal-title"> Edit a category</h4>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -41,7 +40,7 @@ class AddCategory extends React.Component{
                                     <textarea name="description" className="form-control" value={this.state.description} onChange={this.onChange} placeholder="description of category"/>
                                 </div>
                                 <div style={{padding: "10px"}}>
-                                    <button type="submit" className="btn btn-primary btn-block">Add category</button>
+                                    <button type="submit" className="btn btn-primary btn-block">Update</button>
                                 </div>
                             </form>
                         </div>
@@ -53,4 +52,4 @@ class AddCategory extends React.Component{
     }
 }
 
-export default AddCategory
+export default EditCategory
