@@ -1,8 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import AddNote from './components/add-note';
-import ListNotes from './components/list-notes';
+import AddCategory from './components/add-category';
+import ListCategory from './components/list-category';
 
 function App() {
   return (
@@ -11,11 +11,11 @@ function App() {
       <div className="row justify-content-center">
        
         <div className="col-sm-12 col-md-4">
-          <ListNotes />
+          <ListCategory/>
         </div>
 
         <div className="col-sm-12 col-md-4" style={{padding: "2vh"}}></div>
-          <AddNote />
+          <AddCategory />
         </div>
 
       </div>

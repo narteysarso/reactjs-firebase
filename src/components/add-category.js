@@ -1,8 +1,8 @@
 import React from "react";
 
-class AddNote extends React.Component{
+class AddCategory extends React.Component{
     state = {
-        name: "J",
+        name: "",
         description: ""
     }
 
@@ -16,6 +16,8 @@ class AddNote extends React.Component{
         const {name, value} = event.target;
         this.setState({[name] :value});
     }
+
+
     render(){
         return (
             <div>
@@ -38,4 +40,4 @@ class AddNote extends React.Component{
     }
 }
 
-export default AddNote
+export default AddCategory

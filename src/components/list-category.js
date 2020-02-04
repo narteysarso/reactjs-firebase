@@ -1,6 +1,6 @@
 import React from "react";
 
-class ListNotes extends React.Component{
+class ListCategory extends React.Component{
     render(){
         return (
             <div>
@@ -11,4 +11,4 @@ class ListNotes extends React.Component{
     }
 }
 
-export default ListNotes;
+export default ListCategory;
