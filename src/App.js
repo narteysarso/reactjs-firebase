@@ -25,7 +25,6 @@ function App() {
         </div>
 
         <div className="col">
-         
           <AddNote />
         </div>
 
