@@ -4,10 +4,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-
+import {Provider} from "react-redux";
+import reduxStore from './redux/index';
 
 ReactDOM.render(
-    <App />,
+    <Provider store={reduxStore}>
+        <App />
+    </Provider>,
      document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

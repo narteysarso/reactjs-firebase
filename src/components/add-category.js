@@ -1,4 +1,6 @@
 import React from "react";
+import {connect} from "react-redux";
+import { createCategory } from "../redux/actions/categoryActions";
 
 class AddCategory extends React.Component{
     state = {
@@ -10,7 +12,8 @@ class AddCategory extends React.Component{
         event.preventDefault(); //prevents default browser event (submitting form)
         event.stopPropagation(); //prevents event from bubbling to other components
         
-        
+        const {name,description} = this.state;
+        this.props.createCategory({name,description});
     }
     
     onChange = (event) => {
@@ -55,6 +58,10 @@ class AddCategory extends React.Component{
     }
 }
 
+const mapDispatchToProps = (dispatch) =>{
+    return {
+        createCategory: (category ={}) => dispatch(createCategory(category))
+    }
+}
 
-
-export default AddCategory
+export default connect(null, mapDispatchToProps)(AddCategory)
