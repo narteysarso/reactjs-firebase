@@ -9,6 +9,8 @@ class AddCategory extends React.Component{
     handleSubmit = (event) => {
         event.preventDefault(); //prevents default browser event (submitting form)
         event.stopPropagation(); //prevents event from bubbling to other components
+        
+        
     }
     
     onChange = (event) => {
@@ -52,5 +54,7 @@ class AddCategory extends React.Component{
         )
     }
 }
+
+
 
 export default AddCategory

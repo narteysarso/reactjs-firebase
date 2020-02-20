@@ -1,5 +1,4 @@
 import React from "react";
-import Note from "./note";
 
 class ListNotes extends React.Component{
     render(){
